@@ -228,7 +228,7 @@ button.volume{
         transition: 0ms;
     }
     .content{ 
-    transform: translateY(-50%);
+    transform: translateY(-35%);
 }
     .remove{
         display: block;
