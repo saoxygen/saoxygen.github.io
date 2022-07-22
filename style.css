@@ -88,7 +88,7 @@
     width: 100%;
 }
 .menu{   
-    margin-top: 11.7%;
+    margin-top: 10%;
     display: flex;
     justify-content: center;   
     padding-bottom: 20px;  
@@ -227,6 +227,9 @@ button.volume{
     .menu ul li::after{
         transition: 0ms;
     }
+    .content{ 
+    transform: translateY(-50%);
+}
     .remove{
         display: block;
     }
