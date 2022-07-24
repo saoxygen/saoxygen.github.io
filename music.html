@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c825c47fc2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>sa_oxygen/Music</title>
     
@@ -23,6 +24,15 @@
             <button type="button"><span></span><a href="https://open.spotify.com/artist/6obVLsA13XSV9VlT62d3CN">Spotify</a></button>
             <button type="button"><span></span><a href="https://soundcloud.app.goo.gl/Xf72JY2S6N5eEHSX7">Soundcloud</a></button>
         </div>
+        <div class="icon_container">
+        <div class="icon music">
+            <i class="fa fa-volume-off" id="icon_music" aria-hidden="true" onclick="music()"></i>    
+        </div>  
+        </div>
+        <audio id="What_it_took" loop>
+            <source src="music/What_it_took.mp3" type="audio/mpeg"/>
+         </audio>  
     </div>
+    <script src="javascript.js"></script>
 </body>
 </html>

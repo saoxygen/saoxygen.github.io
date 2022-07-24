@@ -42,6 +42,7 @@
     display: inline-block;
     margin: 0 20px 0;
     position: relative;
+    font-size: 15px;
 }
 .navbar ul li a{
     text-decoration: none;
@@ -67,6 +68,7 @@
     display: inline-block;
     margin: 0 20px;
     position: relative;
+    font-size: 15px;
 }
 
 .menu ul li a{
@@ -93,7 +95,7 @@
     justify-content: center;   
     padding-bottom: 20px;  
 }
-.content{ 
+.content, .icon_container{ 
     width: 100%;
     position: absolute;
     top: 50%;
@@ -101,12 +103,22 @@
     text-align: center;
     color: white;
 }
+.icon_container{
+    margin: auto;
+    top: 70%;
+}
+.icon{
+    margin: auto;
+    width: 25px;
+    font-size: 25px;
+}
 .content h1{
-    font-size: 70px;
+    font-size: max(55px);
 }
 .content p{
+    font-size: max(18px);
     margin: 20px auto;
-    font-weight: 100;
+    font-weight: 100px;
     line-height: 25px;
     width: 50%;
 }
@@ -149,40 +161,23 @@ button:hover{
 .remove  {
     display: none;
 }
-.four{
-    display: none;
-}
-.three{
-    display: block;
-}
-.fa{
-    color: white;
-}
-button.volume{
-    width: 50px;
-    padding: 15px 0;
-    text-align: center;
-    margin: 20px 10px;
-    border-radius: 50%;
-    font-weight: bold;
-    border: 2px solid white;
-    background: transparent;
-    color: white;
+.icon{
+    margin-top: 100px;
     cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition: 200ms;
 }
-.btnvolume{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.icon:hover{
+    color: rgba(255, 255, 255, 0.25);
 }
-@media (min-width: 279px) and (max-width: 767px) {
+.menu ul li, .navbar ul li{
+    font-size: max(15px);
+}
+
+@media (min-width: 1px) and (max-width: 767px) {
     .content p{
         width: 80%;   
+        font-size: min(14px);
+        margin: 20px auto;
+        line-height: 135%;
     }
     .content h1{
         font-size: 30px;
@@ -215,7 +210,6 @@ button.volume{
     }
     .menu ul li{
         margin: 0 10px;
-        font-size: 15px;
     }
     .menu{
         margin: 0 0 0 0;
@@ -228,13 +222,20 @@ button.volume{
         transition: 0ms;
     }
     .content{ 
-    transform: translateY(-35%);
-}
+        transform: translateY(-35%);
+    }
     .remove{
         display: block;
     }
     .two, .one, .four, .three{
         display: none;
+    }
+    .menu ul li, .navbar ul li{
+        font-size: clamp( 10px, 15px, 35px);
+    }
+    .icon_container{
+        margin: auto;
+        top: max(80%);
     }
 }
 
@@ -243,8 +244,8 @@ button.volume{
         width: 80%;   
     }
     .logo{
-        width: 20%;
-        padding-right: 35px;
+        width: 30%;
+        text-align: center;
     }
     .navbar{
         display: flex;
@@ -274,9 +275,9 @@ button.volume{
         transition: 0ms;
     }
     .remove{
-        display: block;
-    }
-    .one, .four{
         display: none;
+    }
+    .menu ul li, .navbar ul li{
+        font-size: clamp( 10px, 15px, 35px);
     }
 }
