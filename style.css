@@ -281,3 +281,87 @@ button:hover{
         font-size: clamp( 10px, 15px, 35px);
     }
 }
+
+    @media (min-height: 220px) and (max-height: 520px) and (orientation:Landscape) {
+    .navbar, .menu{
+        width: 85%;
+        margin: auto;
+        padding: 35px 0 10px 0;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+    }
+    .logo{
+        width: 120px;
+        color: white;
+    }
+    .navbar ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px 0;
+        position: relative;
+        font-size: 15px;
+    }
+
+    .menu ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+        font-size: 15px;
+    }
+    .menu{   
+        margin-top: 0%;
+        display: flex;
+        justify-content: center;   
+        padding-bottom: 20px;  
+    }
+    .content, .icon_container{ 
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: white;
+    }
+    .icon_container{
+        margin: auto;
+        top: 80%;
+    }
+    .icon{
+        margin: auto;
+        width: 25px;
+        font-size: 25px;
+    }
+    .content h1{
+        font-size: max(25px);
+    }
+    .content p{
+        font-size: max(15px);
+        margin: 20px auto;
+        font-weight: 100px;
+        line-height: 20px;
+        width: 80%;
+    }
+    button{
+        width: 150px;
+    }
+    #brmedia{
+        display: none;
+    }
+    button a{
+        font-size: 10px;
+    }
+    .menu ul li, .navbar ul li{
+        font-size: max(12px);
+    }
+    .menu ul, .navbar ul{
+        margin: 0;
+        padding: 0%;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
